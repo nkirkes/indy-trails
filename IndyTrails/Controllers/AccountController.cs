@@ -287,7 +287,7 @@ namespace IndyTrails.Controllers
         // POST: /Account/LogOff
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult LogOff()
+        public ActionResult LogOut()
         {
             AuthenticationManager.SignOut();
             return RedirectToAction("Index", "Home");
